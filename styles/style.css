@@ -3,3 +3,105 @@
     padding: 0;
     margin: 0;
 }
+header {
+    display: flex;
+    background-color: #f4b3c2 ;
+    align-items: end ;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+header img {
+    width: 90px;
+}
+header nav ul {
+    display: flex;  
+    gap: 25px; 
+    list-style: none;
+
+}
+header nav ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+#banner {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color:#ffd1dc;
+    
+}
+#banner div {
+    width: 50%;
+}
+#banner  div h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px;
+}
+#banner div p {
+    padding: 20px;
+    font-size: 18px;
+}
+#banner div img {
+    padding: 20px;
+    width: 100%; 
+}
+#sections {
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 40px;
+}
+#sections .card-sections {
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+#sections .card-sections h2 {
+    margin: 30px auto;
+    font-size: 32px;
+   
+}
+#sections .card-sections p {
+    height: 50%;
+    margin: 30px auto;
+    font-size: 22px;
+}
+#sections .card-sections a {
+    margin: 30px auto;
+    padding: 15px 10px;
+    font-size: 18;
+    color: black;
+    text-decoration: none;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+#therapies h2 {
+    text-align: center;
+    font-size:32px ;
+}
+#therapies .cont-cards-therapies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+#therapies .cont-cards-therapies .card-therapies {
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+   
+}
