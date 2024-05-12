@@ -187,9 +187,16 @@ input , textarea {
     border: none;
     background-color: var(--color-primario);
 }
+#separator {
+    width: 0;
+    height: 0;
+    border-right: solid 100vw transparent ;
+    border-bottom: solid var(--color-primario) 13.9vw;
+    margin-top: -13.9vw;
+    overflow: hidden;
+}
 
 footer  {
-    margin-top: 60px;
     padding: 40px;
     height: 40vh;
     background-color: var(--color-primario);
