@@ -71,7 +71,7 @@ header nav ul li a {
     display: flex; 
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 20px;
     gap: 40px;
 }
 #sections .card-sections {
@@ -107,7 +107,7 @@ header nav ul li a {
     border-radius: 10px;
 }
 #therapies{
-    height: 100vh;
+    height: 220vh;
 }
 #therapies h2 {
     text-align: center;
@@ -132,7 +132,7 @@ header nav ul li a {
     text-align: center;  
 }
 #therapies .cont-cards-therapies .card-therapies img {
-    max-width: 300px;
+    max-width: 50%;
     height: 50%;
 }
 #therapies .cont-cards-therapies .card-therapies  button {
@@ -142,4 +142,73 @@ header nav ul li a {
     border: 1px var(--color-primario) solid;
     border-radius: 10px;
     
+}
+#contact {
+    height: 100vh;
+}
+#contact h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#contact form {
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    border: var(--color-primario) 1px  solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+#contact form label ,
+input , textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#contact form textarea {
+    padding: 10px 0px ;   
+}
+#contact form button {
+    width: 50%;
+    font-size: 15px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-primario);
+}
+
+footer  {
+    height: 20vh;
+    background-color: var(--color-primario);
+}
+footer ul {
+    margin-left: 20px;
+    list-style: none;
+}
+footer ul li
+ {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    gap: 5px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+footer a img {
+    width: 40px;
+    height: 40px;
+}
+#whatsapp-icon {
+    position: fixed;
+    z-index: 5px;
+    right: 20px;
+    bottom: 20px;
 }
