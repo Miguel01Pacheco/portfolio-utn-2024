@@ -88,6 +88,7 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     padding: 30px;
     border: var(--color-primario) solid 1px;
     border-radius: 10px;
@@ -113,7 +114,7 @@ header nav ul li a {
     border-radius: 10px;
 }
 #therapies{
-    height: 220vh;
+    max-height: 220vh;
 }
 #therapies h2 {
     text-align: center;
@@ -150,7 +151,7 @@ header nav ul li a {
     
 }
 #contact {
-    height: 100vh;
+    height: 70vh;
 }
 #contact h2 {
     text-align: center;
@@ -198,7 +199,7 @@ input , textarea {
 
 footer  {
     padding: 40px;
-    height: 40vh;
+    height: 20vh;
     background-color: var(--color-primario);
 }
 footer ul {
