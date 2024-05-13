@@ -151,7 +151,7 @@ header nav ul li a {
     
 }
 #contact {
-    height: 70vh;
+    height: 100vh;
 }
 #contact h2 {
     text-align: center;
@@ -191,7 +191,7 @@ input , textarea {
 #separator {
     width: 0;
     height: 0;
-    border-right: solid 100vw transparent ;
+    border-right: solid 98.5vw transparent ;
     border-bottom: solid var(--color-primario) 13.9vw;
     margin-top: -13.9vw;
     overflow: hidden;
