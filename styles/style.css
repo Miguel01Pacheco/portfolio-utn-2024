@@ -3,30 +3,34 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} 
+/* tipo de fuente para tos los títulos*/
 h1 ,h2 ,h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* declaración de variables que contienen los colores a utilizar*/
 :root {
-    --color-primario:#F4B3C2 ;
-    --color-secundario:#FFD1DC ; 
+    --color-primario:#f4c5cf ;
+    --color-secundario:#fddee5 ; 
   }
+/* estilos del encabezado(header)*/  
   
 header {
     display: flex;
-    align-items: end ;
+    align-items: center ;
     justify-content: space-between;
-    padding: 15px 25px;
+    background-color :var(--color-primario);
 }
 header img {
-    width: 90px;
+    width: 80px;
+    margin :10px;
     border: var(--color-primario) 1px solid;
     border-radius: 50%;
     background-color: var(--color-secundario);
 }
 header nav ul {
     display: flex;  
-    gap: 30px; 
+    gap: 25px; 
     list-style: none;
 
 }
@@ -34,43 +38,70 @@ header nav ul li a {
    border: var(--color-primario) 1px solid ;
    background-color: var(--color-secundario);
    border-radius: 5px;
-   padding: 5px;
+   padding: 10px;
    text-decoration: none;
    color: black;
 }
-
+header nav ul li a:hover {
+    background-color: var(--color-primario);
+}
+/* estilos del banner con formato tarjeta*/
 #banner {
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    background-color: var(--color-secundario);
-    
 }
-#banner div {
+#banner .cont-banner {
+    height:  80%;
+    margin: auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:var(--color-primario);
+    box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+    -moz-box-shadow: 3px 10px 20px -7px rgba(0,0,0,0.62);
+}
+.cont-banner .text-banner {
     width: 50%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    background-image: url(../assets/img-sin-fondo-en-png/fondo-rosa-webp.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
-#banner  div h1 {
+#banner  h1 {
     font-size: 40px;
     text-transform: capitalize;
     letter-spacing: 5px;
-    text-align: center;
-    padding: 30px;
+    height: 50%;
 }
-#banner div p {
-    padding: 20px;
+#banner  p {
     text-align: center;
-    width: 60%;
-    font-size: 18px;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
 }
-#banner div img {
-    padding: 20px;
-    width: 100%; 
+.cont-banner .img-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 100%;
+    background-color:var(--color-secundario) ;
+    
+}
+#banner  img {
+    width: 400px;
 }
 #sections {
     height: 100vh;
