@@ -60,8 +60,9 @@ header nav ul li a:hover {
     justify-content: center;
 }
 #banner .cont-banner {
-    height:  80%;
+    height: max-content;
     margin: auto 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,21 +114,19 @@ header nav ul li a:hover {
         margin: auto;
 
     }
-    .cont-banner {
-        height: auto;
+    #banner .cont-banner {
+        height: max-content;
+        padding: 20px;
     }
-
-
-    .text-banner {
+    .cont-banner .text-banner {
         height: 100%;
         width: 100%;
         align-items: center;
     }
     #banner h1 {
         font-size:20px;
-        max-width: max-content;
-        max-height: auto;
-      
+        max-width:100%;
+        max-height: min-content;
     }
     #banner p {
         font-size: 14px;
@@ -150,6 +149,7 @@ header nav ul li a:hover {
     }
     #banner h1 {
         font-size:28px;
+        margin-bottom: 20px;
         max-height: 50%;
        max-width: 100%;
     }
@@ -209,8 +209,11 @@ header nav ul li a:hover {
 }
 @media (max-width:880px) {
     #sections {
-        height: auto;
+        height: max-content;
         grid-template-columns: 1fr;
+    }
+    #sections .card-sections{
+        justify-content: center;
     }
     #sections h2 {
         font-size: 24px;
@@ -226,6 +229,24 @@ header nav ul li a:hover {
 
     }
 }
+@media (max-width:440px) {
+    #sections .card-sections {
+        height: max-content;
+    }
+    #sections h2 {
+        font-size: 20px;
+        margin: auto;
+        max-width: max-content;
+        max-height: max-content;
+    }
+    #sections a {
+         margin: 0px;
+    }
+    #sections p {
+        font-size: 12px;
+    }
+}
+
 
 #therapies{
     max-height: 220vh;
@@ -276,13 +297,14 @@ header nav ul li a:hover {
     }
     #therapies .cont-cards-therapies{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: repeat(5 ,1fr);
     }
 }
 @media (max-width :440px) {
 
     #therapies .cont-cards-therapies{
         grid-template-columns:1fr;
+        grid-template-rows: repeat(9 ,1fr);
     }
 }
 
