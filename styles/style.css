@@ -280,14 +280,16 @@ header nav ul li a:hover {
     max-width: 50%;
     height: 50%;
 }
-#therapies .cont-cards-therapies .card-therapies  button {
+#therapies .cont-cards-therapies .card-therapies  a {
     padding: 15px 10px;
     font-size: 18;
+    color: black;
+    text-decoration: none;
     background-color: var(--color-primario);
     border: 1px var(--color-secundario) solid;
     border-radius: 10px;   
 }
-#therapies .cont-cards-therapies .card-therapies  button:hover {
+#therapies .cont-cards-therapies .card-therapies  a:hover {
     background-color: var(--color-secundario);
     border-color: var(--color-primario);
 }
